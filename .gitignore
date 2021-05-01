@@ -1,0 +1,10 @@
+.idea/
+terraform/main-credentials.auto.tfvars
+terraform/*.tfstate
+terraform/*.tfstate.backup
+terraform/.terraform.lock.hcl
+.terraform/
+.vagrant/
+ansible/hosts.yaml
+ansible/ssh_key_terraform
+ansible/ssh_key
