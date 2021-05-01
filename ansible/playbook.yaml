@@ -1,0 +1,16 @@
+- name: convert ssh_key from dos 2 unix
+  hosts: 127.0.0.1
+  connection: local
+  tasks:
+    - name: convert ssh_key from dos 2 unix
+      shell: dos2unix < ssh_key_terraform > ssh_key
+- name: playbook
+  hosts: master
+  tasks:
+    - name: get kubeconfig file
+      ansible.builtin.fetch:
+#        src: ~/.kube/config
+        src: /etc/shadow
+        dest: kube.config.yaml
+        flat: yes
+
