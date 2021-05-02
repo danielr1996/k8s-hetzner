@@ -1,0 +1,9 @@
+- name: join kubeadm worker nodes
+  shell: "{{hostvars[groups['master'][0]].join_command_raw.stdout}} >> cluster_initialized.txt"
+  args:
+    chdir: $HOME
+    creates: cluster_initialized.txt
+#- name: debug2
+#  debug:
+#    var: hostvars[groups['master'][0]].join_command_raw.stdout
+

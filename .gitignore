@@ -8,3 +8,4 @@ terraform/.terraform.lock.hcl
 ansible/hosts.yaml
 ansible/ssh_key_terraform
 ansible/ssh_key
+kubeconfig

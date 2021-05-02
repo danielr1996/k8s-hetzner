@@ -1,0 +1,7 @@
+files:
+  - name: 00-cgroup-systemd.conf
+    dir: /etc/systemd/system/docker.service.d
+  - name: 20-hetzner-cloud.conf
+    dir: /etc/systemd/system/kubelet.service.d
+  - name: sysctl.conf
+    dir: /etc
