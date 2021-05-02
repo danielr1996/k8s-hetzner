@@ -8,5 +8,4 @@ module "nodes" {
     hcloud_network_subnet.kubernetes
   ]
   ssh_key_id = hcloud_ssh_key.kubernetes.id
-  user_data = data.template_file.user_data.rendered
 }

@@ -33,4 +33,5 @@ module "cluster" {
   ssh_key_file = var.ssh_key_file
   dns_zone_name = var.dns_zone_name
   subnet = var.subnet
+  hcloud_token = var.hcloud_token
 }

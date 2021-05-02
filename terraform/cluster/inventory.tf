@@ -7,6 +7,8 @@ resource "local_file" "ansible_inventory" {
       vars: {
         ansible_ssh_private_key_file: "ssh_key"
         ansible_user: "root"
+        hcloud_token: var.hcloud_token
+        network_id: hcloud_network.kubernetes.id
       }
     }
   })

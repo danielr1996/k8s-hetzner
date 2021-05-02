@@ -5,7 +5,6 @@ resource "hcloud_server" "node" {
   image = var.node.image
   location = var.node.location
   ssh_keys = [var.ssh_key_id]
-  user_data = var.user_data
 
   network {
     network_id = var.network_id
