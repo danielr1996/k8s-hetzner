@@ -28,6 +28,12 @@ Run
 cd ansible && ansible-galaxy collection install community.kubernetes && ansible-playbook playbook.yaml
 ```
 
+## Next steps
+This leaves you with a basic kubernetes setup that you can deploy applications into.
+However your applications are only accesible inside the cluster or with `kubectl port-forward`, 
+therefore you might want to install an ingress controller to allow forwarding traffic to your deployments.
+
+
 ## Involved Software
 - hetzner cloud
 - hetzner dns
